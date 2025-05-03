@@ -1,10 +1,81 @@
-<html>
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>TMS Web Project</title>
-    <style>
-    </style>
-  </head>
-  <body>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PWA com TMS Web Core</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #f8f9fa;
+    }
+    .camera-preview {
+      height: 300px;
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      border: 2px dashed #6c757d;
+      margin-bottom: 1rem;
+    }
+    .text-muted{
+      color: #FFF !important;
+    }
+    .btn-group button {
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .btn-group button:hover {
+      background-color: #343a40;
+      color: #fff;
+    }
+    .webcam-area {
+      height: 200px;
+      background-color: #212529;
+      border: 2px solid #495057;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      margin-bottom: 1rem;
+    }
+    .webcam-area span {
+      font-weight: 600;
+      color: #f8f9fa;
+    }
+    .footer {
+      height: 60px;
+      background-color: #1e1e1e;
+      border-top: 1px solid #343a40;
+      border-radius: 0 0 12px 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-4">
+    <!-- AREA DE VISUALIZACAO DA CAMERA -->
+    <div class="camera-preview d-flex align-items-center justify-content-center" id="divCamera">
+      <!--<span class="text-muted"> Pr&eacute;-visualiza&ccedil;&atilde;o da c&acirc;mera </span>-->
+    </div>
+
+    <!-- BOTOES -->
+    <div class="btn-group w-100 mb-3" role="group" id="divBotoes">
+      <button type="button" class="btn btn-success btn-outline-light" id="btnLigarCamera">Ligar c&acirc;mera</button>
+      <button type="button" class="btn btn-danger" id="btnDesligarCamera">Desligar c&acirc;mera</button>
+      <button type="button" class="btn btn-primary" id="btnCapturar">Capturar</button>
+    </div>
+
+    <div class="webcam-area" id="divVerFotoTirada">
+      <!--<span></span>  -->
+    </div>
+
+    <!-- RODAPE OU ESPACO INFERIOR -->
+    <div class="footer d-flex align-items-center justify-content-center">
+      <span class="fs-5"> 2025 - @Code4Delphi - PWA com TMS Web Core</span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
+

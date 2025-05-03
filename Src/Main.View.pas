@@ -15,16 +15,17 @@ uses
   WEBLib.Dialogs,
   WEBLib.StdCtrls,
   WEBLib.Devices,
-  WEBLib.ExtCtrls;
+  WEBLib.ExtCtrls, WEBLib.WebCtrls;
 
 type
   TMainView = class(TWebForm)
-    WebCamera1: TWebCamera;
-    WebImageControl1: TWebImageControl;
     pnBotoes: TWebPanel;
     btnLigarCamera: TWebButton;
     btnDesligarCamera: TWebButton;
     btnCapturar: TWebButton;
+    WebImageControl1: TWebImageControl;
+    WebHTMLDiv1: TWebHTMLDiv;
+    WebCamera1: TWebCamera;
     procedure btnLigarCameraClick(Sender: TObject);
     procedure btnDesligarCameraClick(Sender: TObject);
     procedure btnCapturarClick(Sender: TObject);
@@ -44,11 +45,12 @@ implementation
 procedure TMainView.btnLigarCameraClick(Sender: TObject);
 begin
   WebCamera1.Start;
+  ShowMessage('btnLigarCameraClick');
 end;
 
 procedure TMainView.btnDesligarCameraClick(Sender: TObject);
 begin
-  WebCamera1.Start;
+  WebCamera1.Stop;
 end;
 
 procedure TMainView.btnCapturarClick(Sender: TObject);
