@@ -27,9 +27,18 @@ type
     WebCamera1: TWebCamera;
     WebHTMLDiv2: TWebHTMLDiv;
     WebImageControl1: TWebImageControl;
+    pnFormulario: TWebPanel;
+    lbNome: TWebLabel;
+    edtNome: TWebEdit;
+    lbSexo: TWebLabel;
+    lbNascimento: TWebLabel;
+    cBoxSexo: TWebComboBox;
+    WebDateTimePickerNascimento: TWebDateTimePicker;
+    btnEnviar: TWebButton;
     procedure btnLigarCameraClick(Sender: TObject);
     procedure btnDesligarCameraClick(Sender: TObject);
     procedure btnCapturarClick(Sender: TObject);
+    procedure btnEnviarClick(Sender: TObject);
   private
 
   public
@@ -56,6 +65,13 @@ end;
 procedure TMainView.btnCapturarClick(Sender: TObject);
 begin
   WebImageControl1.URL := WebCamera1.SnapShotAsBase64;
+end;
+
+procedure TMainView.btnEnviarClick(Sender: TObject);
+begin
+  ShowMessage('Nome: '+ edtNome.Text + sLineBreak +
+    'Sexo: '+ cBoxSexo.Text + sLineBreak +
+    'Nascimento: '+ DateToStr(WebDateTimePickerNascimento.Date));
 end;
 
 end.

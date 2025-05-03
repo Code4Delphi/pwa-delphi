@@ -94,7 +94,6 @@ object MainView: TMainView
       384
       186)
     object WebImageControl1: TWebImageControl
-      AlignWithMargins = True
       Left = 58
       Top = 6
       Width = 268
@@ -106,6 +105,117 @@ object MainView: TMainView
       Anchors = [akTop]
       Center.Horizontal = True
       ChildOrder = 2
+    end
+  end
+  object pnFormulario: TWebPanel
+    Left = 0
+    Top = 523
+    Width = 384
+    Height = 190
+    ElementID = 'divFormulario'
+    Align = alTop
+    ChildOrder = 3
+    TabOrder = 3
+    ExplicitTop = 520
+    object lbNome: TWebLabel
+      Left = 0
+      Top = 0
+      Width = 384
+      Height = 15
+      Align = alTop
+      Caption = 'Nome'
+      ElementID = 'lbNome'
+      HeightPercent = 100.000000000000000000
+      WidthPercent = 100.000000000000000000
+      ExplicitWidth = 33
+    end
+    object lbSexo: TWebLabel
+      Left = 0
+      Top = 37
+      Width = 384
+      Height = 15
+      Align = alTop
+      Caption = 'Sexo'
+      ElementID = 'lbSexo'
+      HeightPercent = 100.000000000000000000
+      WidthPercent = 100.000000000000000000
+      ExplicitWidth = 24
+    end
+    object lbNascimento: TWebLabel
+      Left = 0
+      Top = 75
+      Width = 384
+      Height = 15
+      Align = alTop
+      Caption = 'Nascimento'
+      ElementID = 'lbNascimento'
+      HeightPercent = 100.000000000000000000
+      WidthPercent = 100.000000000000000000
+      ExplicitWidth = 64
+    end
+    object edtNome: TWebEdit
+      Left = 0
+      Top = 15
+      Width = 384
+      Height = 22
+      Align = alTop
+      ChildOrder = 1
+      ElementID = 'edtNome'
+      HeightPercent = 100.000000000000000000
+      TextHint = 'Digite seu nome'
+      WidthPercent = 100.000000000000000000
+      ExplicitTop = 21
+    end
+    object cBoxSexo: TWebComboBox
+      Left = 0
+      Top = 52
+      Width = 384
+      Height = 23
+      Align = alTop
+      ElementID = 'selectSexo'
+      HeightPercent = 100.000000000000000000
+      Text = 'Selecione...'
+      WidthPercent = 100.000000000000000000
+      ItemIndex = 0
+      Items.Strings = (
+        'Selecione...'
+        'Masculino'
+        'Feminino')
+      ExplicitLeft = 3
+      ExplicitTop = 43
+    end
+    object WebDateTimePickerNascimento: TWebDateTimePicker
+      Left = 0
+      Top = 90
+      Width = 384
+      Height = 22
+      ElementID = 'edtNascimento'
+      Align = alTop
+      BorderStyle = bsSingle
+      ChildOrder = 5
+      Color = clWhite
+      Date = 45779.906432094910000000
+      Role = ''
+      Text = ''
+      ExplicitLeft = 32
+      ExplicitTop = 128
+      ExplicitWidth = 170
+    end
+    object btnEnviar: TWebButton
+      Left = 0
+      Top = 112
+      Width = 384
+      Height = 25
+      Align = alTop
+      Caption = 'Enviar'
+      ChildOrder = 6
+      ElementID = 'btnEnviar'
+      HeightPercent = 100.000000000000000000
+      WidthPercent = 100.000000000000000000
+      OnClick = btnEnviarClick
+      ExplicitLeft = 88
+      ExplicitTop = 152
+      ExplicitWidth = 96
     end
   end
 end

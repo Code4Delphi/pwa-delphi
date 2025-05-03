@@ -72,23 +72,22 @@
     </div>
 
     <!-- FORMULARIO -->
-    <div class="card bg-dark border-secondary rounded-3 p-3 mb-4">
+    <div class="card bg-dark border-secondary rounded-3 p-3 mb-4" id="divFormulario">
       <div class="mb-3">
-        <label for="edtNome" class="form-label">Nome</label>
+        <label for="edtNome" class="form-label text-white" id="lbNome">Nome</label>
         <input type="text" class="form-control" id="edtNome" placeholder="Digite seu nome">
       </div>
       <div class="mb-3">
-        <label for="selectSexo" class="form-label">Sexo</label>
+        <label for="selectSexo" class="form-label text-white" id="lbSexo">Sexo</label>
         <select class="form-select" id="selectSexo">
           <option selected disabled>Selecione...</option>
           <option value="masculino">Masculino</option>
           <option value="feminino">Feminino</option>
-          <option value="outro">Outro</option>
         </select>
       </div>
       <div class="mb-3">
-        <label for="edtData" class="form-label">Data de Aniversário</label>
-        <input type="date" class="form-control" id="edtData">
+        <label for="edtNascimento" class="form-label text-white" id="lbNascimento">Nascimento</label>
+        <input type="date" class="form-control" id="edtNascimento">
       </div>
       <button type="button" class="btn btn-outline-success w-100" id="btnEnviar">Enviar</button>
     </div>
