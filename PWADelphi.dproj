@@ -111,7 +111,7 @@
         <TMSApplicationDescription>APP teste PWA com TMS Web Core</TMSApplicationDescription>
         <TMSPWAApplicationName>Code4D-PWA</TMSPWAApplicationName>
         <TMSPWAApplicationShortName>C4D</TMSPWAApplicationShortName>
-        <TMSWebBrowser>4</TMSWebBrowser>
+        <TMSWebBrowser>3</TMSWebBrowser>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
