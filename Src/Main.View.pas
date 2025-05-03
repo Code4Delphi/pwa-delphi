@@ -23,9 +23,10 @@ type
     btnLigarCamera: TWebButton;
     btnDesligarCamera: TWebButton;
     btnCapturar: TWebButton;
-    WebImageControl1: TWebImageControl;
     WebHTMLDiv1: TWebHTMLDiv;
     WebCamera1: TWebCamera;
+    WebHTMLDiv2: TWebHTMLDiv;
+    WebImageControl1: TWebImageControl;
     procedure btnLigarCameraClick(Sender: TObject);
     procedure btnDesligarCameraClick(Sender: TObject);
     procedure btnCapturarClick(Sender: TObject);

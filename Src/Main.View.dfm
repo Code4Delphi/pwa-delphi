@@ -2,18 +2,6 @@ object MainView: TMainView
   Width = 384
   Height = 734
   Caption = 'PWA com Delphi'
-  object WebImageControl1: TWebImageControl
-    Left = 0
-    Top = 337
-    Width = 384
-    Height = 317
-    ElementID = 'divVerFotoTirada'
-    HeightPercent = 100.000000000000000000
-    WidthPercent = 100.000000000000000000
-    Align = alTop
-    ChildOrder = 2
-    ExplicitTop = 329
-  end
   object pnBotoes: TWebPanel
     Left = 0
     Top = 289
@@ -29,7 +17,7 @@ object MainView: TMainView
     object btnLigarCamera: TWebButton
       Left = 0
       Top = 0
-      Width = 137
+      Width = 130
       Height = 48
       Align = alLeft
       Caption = 'Ligar c'#226'mera'
@@ -38,13 +26,11 @@ object MainView: TMainView
       HeightPercent = 100.000000000000000000
       WidthPercent = 100.000000000000000000
       OnClick = btnLigarCameraClick
-      ExplicitLeft = -6
-      ExplicitTop = 3
     end
     object btnDesligarCamera: TWebButton
-      Left = 137
+      Left = 130
       Top = 0
-      Width = 137
+      Width = 130
       Height = 48
       Align = alLeft
       Caption = 'Desligar c'#226'mera'
@@ -53,13 +39,11 @@ object MainView: TMainView
       HeightPercent = 100.000000000000000000
       WidthPercent = 100.000000000000000000
       OnClick = btnDesligarCameraClick
-      ExplicitLeft = 143
-      ExplicitTop = 6
     end
     object btnCapturar: TWebButton
-      Left = 274
+      Left = 260
       Top = 0
-      Width = 127
+      Width = 120
       Height = 48
       Align = alLeft
       Caption = 'Capturar'
@@ -68,8 +52,6 @@ object MainView: TMainView
       HeightPercent = 100.000000000000000000
       WidthPercent = 100.000000000000000000
       OnClick = btnCapturarClick
-      ExplicitLeft = 280
-      ExplicitTop = 3
     end
   end
   object WebHTMLDiv1: TWebHTMLDiv
@@ -90,12 +72,40 @@ object MainView: TMainView
       Height = 283
       Margins.Left = 5
       Margins.Right = 5
+      Center.Horizontal = True
       Align = alClient
       CameraType = ctRear
       ExplicitLeft = 0
       ExplicitTop = -6
       ExplicitWidth = 384
       ExplicitHeight = 289
+    end
+  end
+  object WebHTMLDiv2: TWebHTMLDiv
+    Left = 0
+    Top = 337
+    Width = 384
+    Height = 186
+    ElementID = 'divVerFotoTirada'
+    Align = alTop
+    ChildOrder = 3
+    Role = ''
+    DesignSize = (
+      384
+      186)
+    object WebImageControl1: TWebImageControl
+      AlignWithMargins = True
+      Left = 58
+      Top = 6
+      Width = 268
+      Height = 171
+      Margins.Left = 5
+      Margins.Right = 5
+      HeightPercent = 100.000000000000000000
+      WidthPercent = 100.000000000000000000
+      Anchors = [akTop]
+      Center.Horizontal = True
+      ChildOrder = 2
     end
   end
 end
