@@ -63,15 +63,16 @@ object MainView: TMainView
     Align = alTop
     ChildOrder = 3
     Role = ''
-    ExplicitTop = -6
     object WebCamera1: TWebCamera
       AlignWithMargins = True
       Left = 5
-      Top = 3
+      Top = 25
       Width = 374
-      Height = 283
+      Height = 234
       Margins.Left = 5
+      Margins.Top = 25
       Margins.Right = 5
+      Margins.Bottom = 30
       Center.Horizontal = True
       Align = alClient
       CameraType = ctRear
@@ -94,17 +95,16 @@ object MainView: TMainView
       384
       186)
     object WebImageControl1: TWebImageControl
-      Left = 58
+      Left = 34
       Top = 6
-      Width = 268
-      Height = 171
-      Margins.Left = 5
-      Margins.Right = 5
+      Width = 315
+      Height = 174
       HeightPercent = 100.000000000000000000
       WidthPercent = 100.000000000000000000
       Anchors = [akTop]
       Center.Horizontal = True
-      ChildOrder = 2
+      Center.Vertical = True
+      ElementPosition = epRelative
     end
   end
   object pnFormulario: TWebPanel

@@ -26,7 +26,6 @@ type
     WebHTMLDiv1: TWebHTMLDiv;
     WebCamera1: TWebCamera;
     WebHTMLDiv2: TWebHTMLDiv;
-    WebImageControl1: TWebImageControl;
     pnFormulario: TWebPanel;
     lbNome: TWebLabel;
     edtNome: TWebEdit;
@@ -35,6 +34,7 @@ type
     cBoxSexo: TWebComboBox;
     WebDateTimePickerNascimento: TWebDateTimePicker;
     btnEnviar: TWebButton;
+    WebImageControl1: TWebImageControl;
     procedure btnLigarCameraClick(Sender: TObject);
     procedure btnDesligarCameraClick(Sender: TObject);
     procedure btnCapturarClick(Sender: TObject);
