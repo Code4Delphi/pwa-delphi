@@ -45,7 +45,6 @@ implementation
 procedure TMainView.btnLigarCameraClick(Sender: TObject);
 begin
   WebCamera1.Start;
-  ShowMessage('btnLigarCameraClick');
 end;
 
 procedure TMainView.btnDesligarCameraClick(Sender: TObject);
