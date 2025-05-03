@@ -10,8 +10,6 @@ PWA ou Progressive Web Apps (Aplicativos Web Progressivos), oferecendo uma exper
 ## ▶️ Vídeo de demonstração do projeto
 [https://www.youtube.com/@code4delphi](https://www.youtube.com/@code4delphi)
 
-<br/>
-
 ## 📞 Contatos
 
 [![Telegram](https://img.shields.io/badge/Telegram-Join-blue?logo=telegram)](https://t.me/Code4Delphi)
