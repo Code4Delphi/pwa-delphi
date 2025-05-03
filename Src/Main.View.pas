@@ -35,11 +35,16 @@ type
     WebDateTimePickerNascimento: TWebDateTimePicker;
     btnEnviar: TWebButton;
     WebImageControl1: TWebImageControl;
+    pnAvisos: TWebPanel;
+    lbAvisos: TWebLabel;
     procedure btnLigarCameraClick(Sender: TObject);
     procedure btnDesligarCameraClick(Sender: TObject);
     procedure btnCapturarClick(Sender: TObject);
     procedure btnEnviarClick(Sender: TObject);
+    procedure WebFormCreate(Sender: TObject);
   private
+    procedure AppOnlineChange(Sender: TObject; AStatus: TOnlineStatus);
+    procedure ProcessarAvisos;
 
   public
 
@@ -51,6 +56,24 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TMainView.WebFormCreate(Sender: TObject);
+begin
+  Application.OnOnlineChange := AppOnlineChange;
+  Self.ProcessarAvisos;
+end;
+
+procedure TMainView.AppOnlineChange(Sender: TObject; AStatus: TOnlineStatus);
+begin
+  Self.ProcessarAvisos;
+end;
+
+procedure TMainView.ProcessarAvisos;
+begin
+  lbAvisos.Caption := 'PWA Connection OFFLINE';
+  if Application.IsOnline then
+    lbAvisos.Caption := 'PWA Connection ONLINE';
+end;
 
 procedure TMainView.btnLigarCameraClick(Sender: TObject);
 begin

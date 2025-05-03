@@ -2,6 +2,7 @@ object MainView: TMainView
   Width = 384
   Height = 734
   Caption = 'PWA com Delphi'
+  OnCreate = WebFormCreate
   object pnBotoes: TWebPanel
     Left = 0
     Top = 289
@@ -12,8 +13,6 @@ object MainView: TMainView
     BorderStyle = bsNone
     ChildOrder = 5
     TabOrder = 0
-    ExplicitTop = 300
-    ExplicitWidth = 415
     object btnLigarCamera: TWebButton
       Left = 0
       Top = 0
@@ -75,11 +74,7 @@ object MainView: TMainView
       Margins.Bottom = 30
       Center.Horizontal = True
       Align = alClient
-      CameraType = ctRear
-      ExplicitLeft = 0
-      ExplicitTop = -6
-      ExplicitWidth = 384
-      ExplicitHeight = 289
+      CameraType = ctSelected
     end
   end
   object WebHTMLDiv2: TWebHTMLDiv
@@ -111,12 +106,11 @@ object MainView: TMainView
     Left = 0
     Top = 523
     Width = 384
-    Height = 190
+    Height = 150
     ElementID = 'divFormulario'
     Align = alTop
     ChildOrder = 3
     TabOrder = 3
-    ExplicitTop = 520
     object lbNome: TWebLabel
       Left = 0
       Top = 0
@@ -164,7 +158,6 @@ object MainView: TMainView
       HeightPercent = 100.000000000000000000
       TextHint = 'Digite seu nome'
       WidthPercent = 100.000000000000000000
-      ExplicitTop = 21
     end
     object cBoxSexo: TWebComboBox
       Left = 0
@@ -181,8 +174,6 @@ object MainView: TMainView
         'Selecione...'
         'Masculino'
         'Feminino')
-      ExplicitLeft = 3
-      ExplicitTop = 43
     end
     object WebDateTimePickerNascimento: TWebDateTimePicker
       Left = 0
@@ -197,9 +188,6 @@ object MainView: TMainView
       Date = 45779.906432094910000000
       Role = ''
       Text = ''
-      ExplicitLeft = 32
-      ExplicitTop = 128
-      ExplicitWidth = 170
     end
     object btnEnviar: TWebButton
       Left = 0
@@ -213,9 +201,30 @@ object MainView: TMainView
       HeightPercent = 100.000000000000000000
       WidthPercent = 100.000000000000000000
       OnClick = btnEnviarClick
-      ExplicitLeft = 88
-      ExplicitTop = 152
-      ExplicitWidth = 96
+    end
+  end
+  object pnAvisos: TWebPanel
+    Left = 0
+    Top = 673
+    Width = 384
+    Height = 25
+    ElementID = 'divAvisos'
+    Align = alTop
+    ChildOrder = 4
+    TabOrder = 4
+    object lbAvisos: TWebLabel
+      Left = 0
+      Top = 0
+      Width = 384
+      Height = 25
+      Align = alClient
+      Alignment = taCenter
+      ElementID = 'pAvisos'
+      HeightPercent = 100.000000000000000000
+      Layout = tlCenter
+      WidthPercent = 100.000000000000000000
+      ExplicitWidth = 3
+      ExplicitHeight = 15
     end
   end
 end
