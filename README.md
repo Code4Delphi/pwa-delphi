@@ -10,6 +10,12 @@ PWA ou Progressive Web Apps (Aplicativos Web Progressivos), oferecendo uma exper
 ## ▶️ Vídeo de demonstração do projeto
 [https://www.youtube.com/watch?v=-RFs-odXcfU&list=PLLHSz4dOnnN2Xlf7OX47cF20gbmz9-9z0&index=9](https://www.youtube.com/watch?v=-RFs-odXcfU&list=PLLHSz4dOnnN2Xlf7OX47cF20gbmz9-9z0&index=9)
 
+## 🏷️ Cupom de desconto
+- Use este cupom exclusivo e tenha 30% de desconto em qualquer produto da TMS:
+```
+2026Code4Delphi30
+```
+
 ## 📞 Contatos
 
 [![Telegram](https://img.shields.io/badge/Telegram-Join-blue?logo=telegram)](https://t.me/Code4Delphi)
